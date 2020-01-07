@@ -1,13 +1,23 @@
 <template>
-  <div id="scanner-page" class="relative">
-    <nuxt-link
-      to="/"
-      class="absolute z-10 h-10 w-10 flex items-center justify-center rounded-full bg-primary"
-    >
-      <span class="material-icons text-3xl text-white"
-        >keyboard_arrow_left</span
+  <div id="scanner-page" class="relative h-screen">
+    <div class="absolute z-10 inset-0">
+      <nuxt-link
+        to="/"
+        class="h-10 w-10 m-2 flex items-center justify-center rounded-full bg-primary"
       >
-    </nuxt-link>
+        <span class="material-icons text-3xl text-white"
+          >keyboard_arrow_left</span
+        >
+      </nuxt-link>
+      <p class="block text-center text-white">
+        Pindai QR atau Barcode
+      </p>
+    </div>
+
+    <p class="absolute z-20 bottom-0 inset-x-0 p-4 text-center text-white">
+      {{ result }}
+    </p>
+
     <client-only>
       <StreamBarcodeReader
         @decode="onDecode"
@@ -19,9 +29,13 @@
 
 <script>
 export default {
+  data: () => ({
+    result: null
+  }),
+
   methods: {
     onDecode(result) {
-      console.log(result)
+      this.result = result
     },
 
     onLoaded(result) {
@@ -43,12 +57,13 @@ export default {
   overflow: hidden;
 }
 
-.scanner-container .overlay-element,
-.scanner-container .laser {
-  display: none;
+.scanner-container .overlay-element {
+  height: 100%;
 }
 
 .scanner-container video {
-  min-width: 100%;
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
 }
 </style>
