@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <p class="absolute z-20 bottom-0 inset-x-0 p-4 text-center text-white">
+    <p class="fixed z-20 bottom-0 inset-x-0 p-4 text-center text-white">
       {{ result }}
     </p>
 
