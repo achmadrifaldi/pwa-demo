@@ -8,12 +8,12 @@
         class="absolute inset-0 rounded-full m-auto py-2 px-2 rounded-middle bg-white"
       >
         <div class="relative">
-          <a
-            href="#"
-            class="absolute m-auto m-auto w-12 h-12 p-2 rounded-full text-center button-shadow"
+          <nuxt-link
+            to="/scanner"
+            class="absolute m-auto m-auto w-12 h-12 flex items-center justify-center rounded-full text-center button-shadow"
           >
-            <span class="material-icons text-3xl text-white">add</span>
-          </a>
+            <span class="material-icons text-3xl text-white">center_focus_strong</span>
+          </nuxt-link>
         </div>
       </div>
     </div>
