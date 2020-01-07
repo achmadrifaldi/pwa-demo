@@ -5,7 +5,14 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        primary: '#c62828',
+        secondary: '#e53935'
+      }
+    }
+  },
   variants: {},
   plugins: []
 }
