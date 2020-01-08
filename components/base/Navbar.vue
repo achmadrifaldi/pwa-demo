@@ -23,7 +23,7 @@
             </li>
 
             <li class="inline-block mx-2 mt-4 lg:mt-0">
-              <nuxt-link to="/">BANTUAN</nuxt-link>
+              <nuxt-link to="/help">BANTUAN</nuxt-link>
             </li>
           </ul>
         </div>
