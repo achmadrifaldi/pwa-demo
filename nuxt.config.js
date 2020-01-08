@@ -72,6 +72,20 @@ module.exports = {
     meta: {
       viewport: 'width=device-width, initial-scale=1, user-scalable=no',
       mobileAppIOS: true
+    },
+    manifest: {
+      name: 'Demo App',
+      short_name: 'demo',
+      start_url: '/',
+      description: 'Proof of Concept',
+      lang: 'id',
+      theme_color: "#c62828",
+      background_color: "#c62828"
+    },
+    workbox: {
+      cachingExtensions: [
+        '~/plugins/workbook-cache-google-fonts.js'
+      ]
     }
   },
   /*
