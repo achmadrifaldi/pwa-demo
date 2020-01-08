@@ -20,7 +20,7 @@
       <div class="w-1/2">
         <router-link
           to="/"
-          class="block text-center text-gray-600 pt-2"
+          class="block text-center text-gray-700 pt-2"
           exact
         >
           <span class="material-icons text-3xl">home</span>
@@ -30,7 +30,7 @@
       <div class="w-1/2">
         <router-link
           to="/help"
-          class="block text-center text-gray-600 pt-2"
+          class="block text-center text-gray-700 pt-2"
           exact
         >
           <span class="material-icons text-3xl">help_outline</span>
