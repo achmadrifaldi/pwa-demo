@@ -29,6 +29,8 @@
 
 <script>
 export default {
+  layout: 'blank',
+
   data: () => ({
     result: null
   }),
