@@ -76,7 +76,6 @@ module.exports = {
     manifest: {
       name: 'Demo App',
       short_name: 'demo',
-      start_url: '/',
       description: 'Proof of Concept',
       lang: 'id',
       theme_color: "#c62828",
