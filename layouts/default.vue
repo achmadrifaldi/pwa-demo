@@ -1,8 +1,19 @@
 <template>
   <div id="layout-default" class="bg-gray-300 h-screen">
+    <Navbar />
     <nuxt />
   </div>
 </template>
+
+<script>
+import Navbar from "~/components/base/Navbar"
+
+export default {
+  components: {
+    Navbar
+  }  
+}
+</script>
 
 <style>
 html {
