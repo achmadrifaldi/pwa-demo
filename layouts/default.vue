@@ -1,15 +1,18 @@
 <template>
-  <div id="layout-default" class="bg-gray-300 h-screen">
+  <div id="layout-default" class="bg-gray-300">
     <Navbar />
     <nuxt />
+    <BottomNavigation />
   </div>
 </template>
 
 <script>
+import BottomNavigation from '~/components/base/BottomNavigation.vue'
 import Navbar from "~/components/base/Navbar"
 
 export default {
   components: {
+    BottomNavigation,
     Navbar
   }  
 }
