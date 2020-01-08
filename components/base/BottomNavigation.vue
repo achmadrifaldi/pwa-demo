@@ -1,9 +1,9 @@
 <template>
   <div
     id="base-bottom-navigation"
-    class="bg-white fixed z-40 inset-x-0 bottom-0 shadow-sm pb-1"
+    class="md:hidden bg-white fixed z-40 inset-x-0 bottom-0 shadow-sm pb-1"
   >
-    <div class="flex relative justify-center h-8">
+    <div class="flex relative justify-center">
       <div
         class="absolute inset-0 rounded-full m-auto py-2 px-2 rounded-middle bg-white"
       >
@@ -15,6 +15,27 @@
             <span class="material-icons text-3xl text-white">center_focus_strong</span>
           </nuxt-link>
         </div>
+      </div>
+
+      <div class="w-1/2">
+        <router-link
+          to="/"
+          class="block text-center text-gray-600 pt-2"
+          exact
+        >
+          <span class="material-icons text-3xl">home</span>
+          <span class="block text-xs">BERANDA</span>
+        </router-link>
+      </div>
+      <div class="w-1/2">
+        <router-link
+          to="/help"
+          class="block text-center text-gray-600 pt-2"
+          exact
+        >
+          <span class="material-icons text-3xl">help_outline</span>
+          <span class="block text-xs">BANTUAN</span>
+        </router-link>
       </div>
     </div>
   </div>
