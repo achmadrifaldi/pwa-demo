@@ -40,9 +40,7 @@ export default {
       this.result = result
     },
 
-    onLoaded(result) {
-      console.log(result)
-    }
+    onLoaded(result) {}
   }
 }
 </script>
