@@ -1,12 +1,16 @@
 <template>
   <div id="landing-page" class="relative">
-    <div class="section-1 bg-white p-4">
+    <div class="section-1 bg-white px-4 py-16">
       <h1 class="text-3xl font-bold leading-tight">
         <span class="text-primary">Bridge</span> <br />
         Technology Services
       </h1>
       <p class="text-sm text-gray my-2">PT. Intersolusi Teknologi Asia</p>
+    </div>
 
+    <div class="h-4"></div>
+
+    <section-content class="section-1" title="We Transform Ideas">
       <p class="my-8">
         <strong>
           Software House Indonesia Bridge Technology Services (BTS.id)
@@ -20,13 +24,14 @@
         a software developer and publisher, we offer a solution to increase your
         company productivity using the latest technology.
       </p>
-    </div>
+    </section-content>
 
     <div class="h-4"></div>
 
     <section-content
+      class="section-1"
       title="Our Services"
-      subtitle="We translate what is your needs in the real world into application"
+      subtitle="We translate what is your needs in the real world into application. Best service, with best professional people."
     >
       <div class="my-4">
         <client-only>
@@ -55,7 +60,18 @@
 
     <div class="h-4"></div>
 
-    <section-content title="Tech Expertise">
+    <section-content
+      class="section-1"
+      title="Tech Expertise"
+      subtitle="We are the most reliable IT Company in Indonesia with our years of experience."
+    >
+      <p class="my-8 text-sm text-gray-700">
+        Our vision and mission are to be better, tougher, and smarter. You can
+        also develop your application software, IT service, or website with us.
+        Bring your technology service to a different level, branding your
+        product, boost your sales, and be a professional with us. Our services
+        will make you satisfied.
+      </p>
       <div class="my-4">
         <client-only>
           <carousel
@@ -77,6 +93,24 @@
       </div>
     </section-content>
 
+    <div class="h-4"></div>
+
+    <section-content
+      class="section-1"
+      title="Clients"
+      subtitle="Professional Service with Profesional Client. What makes us have integrity and credibility."
+    >
+      <div class="my-4 flex flex-wrap">
+        <div v-for="(client, index) in clients" :key="index" class="w-1/2 md:w-1/3 lg:w-1/6">
+          <card class="m-2">
+            <div class="flex justify-center">
+              <img :src="client.icon" alt="Icon" class="h-16 w-16" />
+            </div>
+          </card>
+        </div>
+      </div>
+    </section-content>
+
     <div class="h-24"></div>
   </div>
 </template>
@@ -94,6 +128,81 @@ export default {
   },
 
   data: () => ({
+    clients: [
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-04.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-01.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-02.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-03.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-05.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-06.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-07.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-08.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-09.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-10.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-11.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-12.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-13.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-14.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-15.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-16.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-17.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-18.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-19.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-20.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-21.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-23.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-24.png')
+      },
+      {
+        icon: require('@/assets/images/client-icons/weblogoclients-26.png')
+      }
+    ],
+
     services: [
       {
         icon: require('@/assets/images/service-icons/icon2.png'),
