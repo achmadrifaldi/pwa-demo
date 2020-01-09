@@ -1,9 +1,9 @@
 <template>
   <div
     id="base-bottom-navigation"
-    class="md:hidden bg-white fixed z-40 inset-x-0 bottom-0 shadow-sm pb-1"
+    class="md:hidden bg-white fixed z-40 inset-x-0 bottom-0 shadow-sm"
   >
-    <div class="flex relative justify-center border border-t">
+    <div class="flex relative justify-center border-t">
       <div
         class="absolute inset-0 rounded-full m-auto py-2 px-2 rounded-middle bg-white"
       >
