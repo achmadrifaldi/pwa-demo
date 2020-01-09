@@ -15,15 +15,15 @@
             class="flex flex-col lg:flex-row lg:items-center leading-none text-sm text-white font-bold p-0 m-0"
           >
             <li class="inline-block mx-2 mt-4 lg:mt-0">
-              <nuxt-link to="/">BERANDA</nuxt-link>
+              <nuxt-link to="/">Home</nuxt-link>
             </li>
 
             <li class="inline-block mx-2 mt-4 lg:mt-0">
-              <nuxt-link to="/scanner">PEMINDAI</nuxt-link>
+              <nuxt-link to="/attendance">Attendance</nuxt-link>
             </li>
 
             <li class="inline-block mx-2 mt-4 lg:mt-0">
-              <nuxt-link to="/help">BANTUAN</nuxt-link>
+              <nuxt-link to="/blog">Blog</nuxt-link>
             </li>
           </ul>
         </div>

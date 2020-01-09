@@ -3,13 +3,13 @@
     id="base-bottom-navigation"
     class="md:hidden bg-white fixed z-40 inset-x-0 bottom-0 shadow-sm pb-1"
   >
-    <div class="flex relative justify-center">
+    <div class="flex relative justify-center border border-t">
       <div
         class="absolute inset-0 rounded-full m-auto py-2 px-2 rounded-middle bg-white"
       >
         <div class="relative">
           <nuxt-link
-            to="/scanner"
+            to="/attendance"
             class="absolute m-auto m-auto w-12 h-12 flex items-center justify-center rounded-full text-center button-shadow"
           >
             <span class="material-icons text-3xl text-white">center_focus_strong</span>
@@ -23,18 +23,18 @@
           class="block text-center text-gray-700 pt-2"
           exact
         >
-          <span class="material-icons text-3xl">home</span>
-          <span class="block text-xs">BERANDA</span>
+          <span class="material-icons text-3xl">dashboard</span>
+          <span class="block text-xs">Home</span>
         </router-link>
       </div>
       <div class="w-1/2">
         <router-link
-          to="/help"
+          to="/blog"
           class="block text-center text-gray-700 pt-2"
           exact
         >
-          <span class="material-icons text-3xl">help_outline</span>
-          <span class="block text-xs">BANTUAN</span>
+          <span class="material-icons text-3xl">library_books</span>
+          <span class="block text-xs">Blog</span>
         </router-link>
       </div>
     </div>
