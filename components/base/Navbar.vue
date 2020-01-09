@@ -1,10 +1,10 @@
 <template>
   <div id="base-navbar" class="relative">
     <div class="fixed z-10 inset-x-0">
-      <div class="flex flex-wrap items-center bg-primary py-2 lg:px-16">
+      <div class="flex flex-wrap items-center bg-alternative py-2 lg:px-16">
         <div class="w-full lg:w-1/5 flex items-center px-2 lg:justify-center">
-          <nuxt-link to="/" class="h-12 w-12 rounded-full bg-white flex items-center justify-center">
-            <img src="~/assets/images/logo.png" alt="Logo Application" class="h-8"/>
+          <nuxt-link to="/" class="h-12 flex items-center justify-center">
+            <img src="~/assets/images/logo-2.png" alt="Logo Application" class="h-8"/>
           </nuxt-link>
         </div>
 
