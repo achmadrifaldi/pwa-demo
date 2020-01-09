@@ -4,6 +4,10 @@
     <nuxt />
     <Footer />
     <BottomNavigation />
+
+    <client-only>
+      <offline-alert />
+    </client-only>
   </div>
 </template>
 
@@ -31,5 +35,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.offline-alert {
+  top: 4rem !important;
 }
 </style>
