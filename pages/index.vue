@@ -8,8 +8,6 @@
       <p class="text-sm text-gray my-2">PT. Intersolusi Teknologi Asia</p>
     </div>
 
-    <div class="h-4"></div>
-
     <section-content class="section-1" title="We Transform Ideas">
       <p class="my-8">
         <strong>
@@ -110,8 +108,6 @@
         </div>
       </div>
     </section-content>
-
-    <div class="h-24"></div>
   </div>
 </template>
 
