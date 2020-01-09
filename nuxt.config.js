@@ -43,7 +43,8 @@ module.exports = {
   plugins: [
     { src: '~plugins/vue-moment.js' },
     { src: '~/plugins/vue-carousel', mode: 'client' },
-    { src: '~plugins/vue-barcode-reader.js', mode: 'client' }
+    { src: '~/plugins/vue-barcode-reader.js', mode: 'client' },
+    { src: '~/plugins/nuxt-offline-alert.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -79,12 +80,17 @@ module.exports = {
       short_name: 'demo',
       description: 'Proof of Concept',
       lang: 'id',
-      theme_color: "#c62828",
-      background_color: "#c62828"
+      theme_color: "#591b20",
+      background_color: "#ffffff"
     },
     workbox: {
       cachingExtensions: [
         '~/plugins/workbook-cache-google-fonts.js'
+      ],
+      runtimeCaching: [
+        {
+          urlPattern: 'https://newsapi.org/.*'
+        }
       ]
     }
   },
