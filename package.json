@@ -17,7 +17,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.16.3",
     "nuxt-offline-alert": "0.0.7",
     "vue-barcode-reader": "0.0.3",
     "vue-carousel": "^0.18.0",
